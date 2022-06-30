@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DaVinci-Web/static/css/main.a0372c8c.css",
-    "main.js": "/DaVinci-Web/static/js/main.2508fea4.js",
+    "main.css": "/DaVinci-Web/static/css/main.b64943fa.css",
+    "main.js": "/DaVinci-Web/static/js/main.c0d1b0c4.js",
     "static/media/logo.png": "/DaVinci-Web/static/media/logo.29852b3b6ef7191a00e6.png",
     "index.html": "/DaVinci-Web/index.html",
-    "main.a0372c8c.css.map": "/DaVinci-Web/static/css/main.a0372c8c.css.map",
-    "main.2508fea4.js.map": "/DaVinci-Web/static/js/main.2508fea4.js.map"
+    "main.b64943fa.css.map": "/DaVinci-Web/static/css/main.b64943fa.css.map",
+    "main.c0d1b0c4.js.map": "/DaVinci-Web/static/js/main.c0d1b0c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0372c8c.css",
-    "static/js/main.2508fea4.js"
+    "static/css/main.b64943fa.css",
+    "static/js/main.c0d1b0c4.js"
   ]
 }
