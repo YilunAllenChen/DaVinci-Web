@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  CustomizeColor,
+  CustomizeModel,
+  CustomizeSwitch,
+} from "./components/customization";
+
+import { useSelector } from "react-redux";
+const selectColor = (state) => state.customization.color;
+const selectSwitch = (state) => state.customization.switch;
+const selectQA = (state) => state.customization.questions;
 
 function App() {
+  let color = useSelector(selectColor);
+  let switchType = useSelector(selectSwitch);
+  let QA = useSelector(selectQA);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <CustomizeModel />
+      </div>
+
+      <div className="sectional" hidden={Object.keys(QA).length < 3}>
+        <CustomizeColor />
+      </div>
+
+      <div className="sectional" hidden={color == null}>
+        <CustomizeSwitch />
+      </div>
     </div>
   );
 }
