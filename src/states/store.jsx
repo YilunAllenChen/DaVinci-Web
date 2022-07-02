@@ -5,6 +5,7 @@ import {
   changeColorAction,
   changeSwitchAction,
   changeModelAction,
+  changeUserStateAction,
   answerQuestionAction,
 } from "./action/actionCustomization.jsx";
 
@@ -17,11 +18,12 @@ const rootReducer = createSlice({
     changeColor: changeColorAction,
     changeModel: changeModelAction,
     changeSwitch: changeSwitchAction,
+    changeUserState: changeUserStateAction,
     answerQuestion: answerQuestionAction,
   },
 });
 
-export const { changeColor, changeSwitch, changeModel, answerQuestion } =
+export const { changeColor, changeSwitch, changeModel, changeUserState, answerQuestion } =
   rootReducer.actions;
 
 export const store = configureStore({
